@@ -1,0 +1,58 @@
+<!-- Name: Input <your name here>
+Email: Input <email>
+Date of Birth: Input (Date)
+Age:Number
+District: Select
+Gender: Radio (chose one of two)
+Interest: Input (check box)
+Message: (Text Area)
+submit reset
+(ref to cms) -->
+
+<form action="/login" method="POST">
+    <div>
+       <label for="name">Name</label>
+       <input type='text' name="name" id="name" placeholder="Input your name here"/>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type='password' name="password" id="password" placeholder="Input your password here"/>
+     </div>
+    <div>
+       <label for="email">Email</label>
+       <input type='email' name="email" id="email"/>
+    </div>
+    <div>
+       <label for="date_of_birth">Date of Birth</label>
+       <input type='date' name="date_of_birth" id="date_of_birth" />
+    </div>
+    <div>
+       <label for="age">Age</label>
+       <input type='number' name="age" id="age"  />
+    </div>
+     <div>
+       <label for="district">District</label>
+        <select name="district" id="district">
+            <option value="1">Hong Kong Island</option>
+            <option value="2">Kowloon</option>
+            <option value="3">New Territories</option> 
+        </select>
+    </div>
+    <div>
+       <label for="gender">Gender</label>
+        <input type='radio' name="gender" value="Male" />                         
+        <input type='radio' name="gender" value="Female" />
+    </div>
+    <div>
+       <label for="interest">Interest</label>
+        <input type='checkbox' name="programming" />                          
+        <input type='checkbox' name="hiking" />
+        <input type='checkbox' name="swimming" />
+    </div>
+    <div>
+        <input type='submit' value="submit" />
+        <input type='reset' value="reset" />
+    </div>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+</form>
